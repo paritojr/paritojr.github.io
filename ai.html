@@ -12,8 +12,13 @@
       body {
         background-color: #fff;
       }
-      .main{
+      .footer{
         width: 100vh;
+        position: absolute;
+        bottom: 0;
+      }
+      .aiprompt{
+        width: 100vh
       }
     </style>
   </head>
@@ -23,10 +28,9 @@
     <a href="../downloads.html">Downloads</a>
     <a href="../ai.html">AI⁽ⁿᵉʷ⁾</a>
     <hr>
-    <div class="main">
-      <div class="footer">
-        <input type="text" class="aiprompt" id="aiprompt" placeholder="Type your prompt here..." onkeydown="if(event.keyCode=13){askai();}">
-      </div>
+    <div class="footer">
+      <input type="text" class="aiprompt" id="aiprompt" placeholder="Type your prompt here..." onkeydown="if(event.keyCode=13){askchatbot();}">
     </div>
+    <script src="js/ai.js"></script>
   </body>
 </html>
